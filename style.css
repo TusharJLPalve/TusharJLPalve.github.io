@@ -1,0 +1,105 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #004d40;
+    margin-bottom: 30px;
+}
+
+header {
+    background-color: #e0f2f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.projects {
+    margin-top: 50px;
+}
+
+.project {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #00796b;
+}
+
+/* Hover Animation */
+.project h4 {
+    color: #00796b;
+    font-size: 1.2rem;
+}
+
+.project:hover h4 {
+    color: #004d40;
+    text-decoration: underline;
+
+/* Display Project Details when hovering */
+.sub-project {
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+    color: #555;
+}
+
+.project:hover .sub-project {
+    display: block;
+}
+
+.sub-project h5 {
+    font-size: 1.1rem;
+    color: #00796b;
+}
+
+.sub-project a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+.sub-project a:hover {
+    text-decoration: underline;
+}
